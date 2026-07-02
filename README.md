@@ -30,7 +30,7 @@ A hands-on portfolio piece proving I can pick up new tools fast — built while 
 - **Cursor blank/black screen on launch** — resolved by launching with `--no-sandbox --disable-gpu` flags to work around a GPU rendering conflict inside the Linux container.
 - **ChromeOS/Linux file separation** — Chrome downloads and the Linux filesystem are isolated by default; resolved using ChromeOS's built-in "Install with Linux" option for the `.deb` file.
 - **Local disk space exhaustion** — `apt install nodejs` pulls in large compiler toolchains (gcc, cpp) that exceeded available Crostini storage; resolved short-term with a direct Node.js binary install, then permanently by moving the whole workflow to GitHub Codespaces.
-- **Claude Code subscription requirement** — CLI login via the standard account option requires Claude Pro or Max. I identified a possible workaround (Anthropic Console API key) but chose not to pursue it further, since it isn't guaranteed to be free and I wanted to complete this task without any cost. This is documented here transparently rather than worked around artificially.
+- **Claude Code subscription requirement** — CLI login via the standard account option requires Claude Pro or Max. I identified a possible workaround (Anthropic Console API key), since it isn't guaranteed to be free and didn't work out as how i expected, it demanded lots of process to be followed also with uncertainy of successful login. This is documented here transparently rather than worked around artificially.
 - **Codex succeeded where Claude Code didn't** — logging in with a free ChatGPT account worked immediately, showing that account requirements differ meaningfully between the two tools even though they serve a similar purpose.
 
 ## What I Learned
